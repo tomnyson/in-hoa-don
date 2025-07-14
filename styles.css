@@ -455,3 +455,853 @@ button:hover i {
     padding-top: 10px;
     border-top: 2px solid #333;
 } 
+
+/* Enhanced Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #4CAF50, #45a049);
+        color: white;
+        margin: -10px -10px 15px -10px;
+        border-radius: 0;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* Compact search box */
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 2px solid #ddd;
+    }
+
+    .add-item-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 15px;
+        font-size: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    /* Compact menu items */
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .menu-item {
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 8px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-item input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    .menu-item label {
+        font-size: 15px;
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #e44d26;
+        flex-shrink: 0;
+    }
+
+    .delete-item-btn {
+        margin-left: 8px;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    /* Compact sections */
+    .menu-section, .order-section {
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    /* Optimized order layout */
+    .order-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 15px 12px;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    }
+
+    .item-controls {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .item-controls:last-of-type {
+        margin-bottom: 12px;
+    }
+
+    .item-controls label {
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    .item-controls > div {
+        gap: 8px;
+    }
+
+    .item-name-input {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 2px solid #ddd;
+    }
+
+    .item-price-input {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 2px solid #ddd;
+        width: 100px;
+    }
+
+    .quantity-input {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 2px solid #ddd;
+        width: 80px;
+    }
+
+    .reset-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+
+    .item-total {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px;
+        background: linear-gradient(135deg, #ff6b35, #e44d26);
+        color: white;
+        border-radius: 8px;
+        margin: 8px 0;
+    }
+
+    .remove-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    /* Compact total section */
+    .total {
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+        background: linear-gradient(135deg, #4CAF50, #45a049);
+        color: white;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+
+    .total h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* Compact action buttons */
+    .actions {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .actions button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        justify-content: center;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    #print-btn {
+        background: linear-gradient(135deg, #2196F3, #1976D2);
+    }
+
+    #export-txt {
+        background: linear-gradient(135deg, #FF9800, #F57C00);
+    }
+
+    #export-pdf {
+        background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+    }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 2px;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .menu-section, .order-section {
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    .menu-item {
+        padding: 10px;
+        font-size: 14px;
+        min-height: 46px;
+    }
+
+    .menu-item label {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .order-item {
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .item-controls label {
+        font-size: 12px;
+    }
+
+    .item-name-input,
+    .item-price-input,
+    .quantity-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .item-total {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .actions button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .total {
+        padding: 12px;
+    }
+
+    .total h3 {
+        font-size: 18px;
+    }
+} 
+
+/* Enhanced Modal responsive */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 96%;
+        margin: 15px auto;
+        padding: 12px;
+        max-height: 92vh;
+        overflow-y: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+
+    .receipt {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 8px;
+        background: #fafafa;
+    }
+
+    .receipt-header {
+        text-align: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed #333;
+    }
+
+    .receipt-header h2 {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+        color: #333;
+    }
+
+    .receipt-header p {
+        font-size: 12px;
+        margin: 2px 0;
+        color: #666;
+    }
+
+    .receipt-body {
+        margin: 15px 0;
+    }
+
+    .receipt-body > p {
+        font-size: 13px;
+        margin: 5px 0;
+        color: #444;
+    }
+
+    .receipt-items {
+        margin: 15px 0;
+        padding: 10px 0;
+        border-top: 1px dashed #999;
+        border-bottom: 1px dashed #999;
+    }
+
+    .receipt-items div {
+        font-size: 13px;
+        margin: 6px 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 0;
+    }
+
+    .receipt-total {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: right;
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 2px solid #333;
+        color: #333;
+    }
+
+    .receipt-footer {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px dashed #999;
+        color: #666;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+        padding-top: 12px;
+        border-top: 2px solid #eee;
+    }
+
+    .modal-actions button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .print-receipt-btn {
+        background: linear-gradient(135deg, #2196F3, #1976D2);
+    }
+
+    .close-modal {
+        background: linear-gradient(135deg, #757575, #616161);
+    }
+
+    /* Enhanced Add Item Modal */
+    .add-item-form {
+        padding: 12px;
+    }
+
+    .add-item-form h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #333;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #4CAF50;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #555;
+        display: block;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 2px solid #ddd;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: #4CAF50;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .form-actions button {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+
+    .submit-btn {
+        background: linear-gradient(135deg, #4CAF50, #45a049);
+    }
+
+    .cancel-btn {
+        background: linear-gradient(135deg, #757575, #616161);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .receipt {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .receipt-header h2 {
+        font-size: 16px;
+    }
+
+    .receipt-header p,
+    .receipt-body p {
+        font-size: 11px;
+    }
+
+    .receipt-items div {
+        font-size: 11px;
+    }
+
+    .receipt-total {
+        font-size: 14px;
+    }
+
+    .add-item-form {
+        padding: 10px;
+    }
+
+    .add-item-form h2 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .modal-actions button,
+    .form-actions button {
+        padding: 12px;
+        font-size: 14px;
+    }
+} 
+
+/* Touch-friendly improvements */
+@media screen and (max-width: 768px) {
+    /* Larger touch targets */
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    /* Better spacing for touch */
+    .menu-item {
+        min-height: 60px;
+        touch-action: manipulation;
+    }
+
+    button {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+
+    .remove-btn,
+    .reset-btn,
+    .delete-item-btn {
+        min-width: 44px;
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+
+    /* Prevent zoom on input focus */
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+        touch-action: manipulation;
+    }
+
+    /* Better scroll behavior */
+    .modal-content {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Hide horizontal scroll */
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+/* Landscape orientation improvements */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .container {
+        padding: 10px;
+    }
+
+    .menu-section,
+    .order-section {
+        padding: 10px;
+    }
+
+    .modal-content {
+        margin: 10px auto;
+        max-height: 95vh;
+    }
+
+    .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .actions button {
+        flex: 1;
+        min-width: 200px;
+    }
+} 
+
+/* Mobile UX improvements */
+@media screen and (max-width: 768px) {
+    /* Sticky header for better navigation */
+    h1 {
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 10;
+        padding: 15px 0;
+        margin: 0 -15px 15px -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Better visual hierarchy */
+    .menu-section {
+        margin-bottom: 20px;
+    }
+
+    .order-section {
+        margin-bottom: 20px;
+    }
+
+    /* Improved button feedback */
+    button:active {
+        transform: scale(0.98);
+        transition: transform 0.1s;
+    }
+
+    /* Better loading states */
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    /* Enhanced form experience */
+    .form-group input:focus,
+    .form-group select:focus,
+    .item-name-input:focus,
+    .item-price-input:focus,
+    .quantity-input:focus {
+        border-width: 2px;
+        padding: 11px; /* Compensate for border increase */
+    }
+
+    /* Card-like appearance for better visual grouping */
+    .menu-item,
+    .order-item {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border: 1px solid #e0e0e0;
+    }
+
+    /* Better error/success states */
+    .quantity-input:invalid {
+        border-color: #f44336;
+        box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.2);
+    }
+
+    /* Improved accessibility */
+    .menu-item:focus-within,
+    .order-item:focus-within {
+        outline: 2px solid #4CAF50;
+        outline-offset: 2px;
+    }
+}
+
+/* Dark mode support for mobile */
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .container {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    .menu-section,
+    .order-section {
+        background-color: #2d2d2d;
+    }
+
+    .menu-item,
+    .order-item {
+        background-color: #333333;
+        border-color: #555555;
+    }
+
+    input,
+    select {
+        background-color: #333333;
+        color: #ffffff;
+        border-color: #555555;
+    }
+
+    .modal-content {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+} 
+
+/* Mobile Performance & Animation Enhancements */
+@media screen and (max-width: 768px) {
+    /* Hardware acceleration for smooth scrolling */
+    .container,
+    .modal-content {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Smooth transitions */
+    .menu-item,
+    .order-item,
+    .actions button,
+    .modal-actions button {
+        transition: all 0.2s ease;
+        will-change: transform;
+    }
+
+    /* Enhanced touch feedback */
+    .menu-item:active,
+    button:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+
+    /* Improved checkbox styling for mobile */
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: white;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    input[type="checkbox"]:checked {
+        background: linear-gradient(135deg, #4CAF50, #45a049);
+        border-color: #4CAF50;
+    }
+
+    input[type="checkbox"]:checked::after {
+        content: '✓';
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Loading states */
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    /* Focus states for accessibility */
+    button:focus,
+    input:focus,
+    select:focus {
+        outline: 3px solid rgba(76, 175, 80, 0.3);
+        outline-offset: 2px;
+    }
+
+    /* Optimized text rendering */
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    /* Better visual hierarchy */
+    .menu-item:hover,
+    .order-item:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transform: translateY(-1px);
+    }
+
+    /* Gradient animations */
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .actions button,
+    .modal-actions button,
+    .form-actions button {
+        background-size: 200% 200%;
+        animation: gradientShift 3s ease infinite;
+    }
+
+    /* Improved sticky header */
+    h1 {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Enhanced modal entrance */
+    .modal {
+        animation: modalFadeIn 0.3s ease;
+    }
+
+    @keyframes modalFadeIn {
+        from {
+            opacity: 0;
+            backdrop-filter: blur(0px);
+        }
+        to {
+            opacity: 1;
+            backdrop-filter: blur(5px);
+        }
+    }
+
+    .modal-content {
+        animation: modalSlideUp 0.3s ease;
+    }
+
+    @keyframes modalSlideUp {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+} 
