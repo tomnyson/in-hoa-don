@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Printing Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Printing Software</h1>
+        
+        <div class="menu-section">
+            <h2>Select Items</h2>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search items...">
+                <button id="add-item-btn" class="add-item-btn"><i class="fas fa-plus"></i> Sale Transaction</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <input type="checkbox" id="item1" data-price="25000" data-unit="đ">
+                    <label for="item1">Bubble Tea</label>
+                    <span class="price">25.000đ</span>
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="item2" data-price="35000" data-unit="đ">
+                    <label for="item2">Coffee with Milk</label>
+                    <span class="price">35.000đ</span>
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="item3" data-price="15000" data-unit="đ">
+                    <label for="item3">Meat Sandwich</label>
+                    <span class="price">15.000đ</span>
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="item4" data-price="45000" data-unit="đ">
+                    <label for="item4">Iced Coffee</label>
+                    <span class="price">45.000đ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-section">
+            <h2>Order</h2>
+            <div id="order-items">
+                <!-- Selected items will be displayed here -->
+            </div>
+            <div class="total">
+                <h3>Total: <span id="total-amount">0đ</span></h3>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="print-btn"><i class="fas fa-print"></i> Print VAT VN (F7)</button>
+            <button id="export-txt"><i class="fas fa-file-text"></i> Export TXT</button>
+            <button id="export-pdf"><i class="fas fa-file-pdf"></i> Export PDF</button>
+        </div>
+
+        <!-- Invoice Modal -->
+        <div id="receipt-modal" class="modal">
+            <div class="modal-content">
+                <div class="receipt">
+                    <div class="receipt-header">
+                        <h2>STORE ABC</h2>
+                        <p>Address: 123 ABC Street, XYZ District</p>
+                        <p>Phone: 0123.456.789</p>
+                    </div>
+                    <div class="receipt-body">
+                        <p>Invoice No: <span id="receipt-id"></span></p>
+                        <p>Time: <span id="receipt-time"></span></p>
+                        <div id="receipt-items"></div>
+                        <div class="receipt-total">
+                            <p>Total: <span id="receipt-total"></span></p>
+                        </div>
+                    </div>
+                    <div class="receipt-footer">
+                        <p>Thank you for your purchase!</p>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="print-receipt-btn" class="print-receipt-btn"><i class="fas fa-print"></i> Print Receipt</button>
+                    <button class="close-modal"><i class="fas fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Item Modal -->
+        <div id="add-item-modal" class="modal">
+            <div class="modal-content">
+                <div class="add-item-form">
+                    <h2>Add New Item</h2>
+                    <form id="add-item-form">
+                        <div class="form-group">
+                            <label for="item-name">Item Name:</label>
+                            <input type="text" id="item-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="item-price">Price:</label>
+                            <input type="number" id="item-price" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="item-unit">Unit:</label>
+                            <select id="item-unit">
+                                <option value="đ">VND (đ)</option>
+                                <option value="$">USD ($)</option>
+                                <option value="€">EUR (€)</option>
+                                <option value="piece">Piece</option>
+                                <option value="kg">Kilogram</option>
+                                <option value="g">Gram</option>
+                                <option value="l">Liter</option>
+                                <option value="ml">Milliliter</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn"><i class="fas fa-plus"></i> Add Item</button>
+                            <button type="button" class="cancel-btn"><i class="fas fa-times"></i> Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
